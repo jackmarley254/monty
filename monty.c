@@ -84,7 +84,7 @@ void execute_function(stack_t **stack)
 	int i;
 
 	for (i = 0; functions[i].opcode; i++)
-cat -e bytecodes/00.m	{
+	{
 		if (!strcmp(ex.data.op_func, functions[i].opcode))
 		{
 			functions[i].f(stack, ex.data.line_n);
