@@ -75,7 +75,7 @@ void read_file(FILE *fp)
 void execute_function(stack_t **stack)
 {
 	instruction_t functions[] = {
-		{"push", monty_push}, {"pall", monty_pall}, {"pint", monty_pint},
+		{"push", push}, {"pall", pall}, {"pint", monty_pint},
 		{"pop", monty_pop}, {"swap", monty_swap}, {"add", monty_add},
 		{"sub", monty_sub}, {"nop", monty_nop}, {"div", monty_div},
 		{"mul", monty_mul}, {"mod", monty_mod}, {"pchar", monty_pchar},
@@ -84,7 +84,7 @@ void execute_function(stack_t **stack)
 	int i;
 
 	for (i = 0; functions[i].opcode; i++)
-	{
+cat -e bytecodes/00.m	{
 		if (!strcmp(ex.data.op_func, functions[i].opcode))
 		{
 			functions[i].f(stack, ex.data.line_n);
