@@ -75,8 +75,8 @@ void execute_function(stack_t **stack);
 size_t not_empty(char *line);
 content_v clean_spaces(char *line);
 
-void monty_push(stack_t **top, unsigned int line_n);
-void monty_pall(stack_t **top, unsigned int line_n);
+void push(stack_t **top, unsigned int line_n);
+void pall(stack_t **top, unsigned int line_n);
 void monty_pint(stack_t **top, unsigned int line_n);
 void monty_pop(stack_t **top, unsigned int line_n);
 void monty_swap(stack_t **top, unsigned int line_n);

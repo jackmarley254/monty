@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * monty_push - pushes an element to the stack.
+ * push - pushes an element to the stack.
  * @top_ptr: idk.
  * @line_n: idk.
  */
-void monty_push(stack_t **top_ptr, unsigned int line_n)
+void push(stack_t **top_ptr, unsigned int line_n)
 {
 	/* temporal, esto en realidad viene en la variable externa */
 	stack_t *new_node, *top = *top_ptr;
@@ -47,12 +47,12 @@ void monty_push(stack_t **top_ptr, unsigned int line_n)
 }
 
 /**
- * monty_pall - prints all the values on the stack,
+ * pall - prints all the values on the stack,
  * starting from the top of the stack.
  * @top_ptr: idk.
  * @line_n: idk.
  */
-void monty_pall(stack_t **top_ptr, unsigned int line_n)
+void pall(stack_t **top_ptr, unsigned int line_n)
 {
 	/* temporal, esto en realidad viene en la variable externa */
 	stack_t *aux = *top_ptr;
